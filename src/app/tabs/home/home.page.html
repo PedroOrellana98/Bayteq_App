@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title id="tituloPrincipal">Home</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-button id="botonSalir" color="primary" shape="round" fill="solid" (click)="salir()"> 
+      Logout</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Information</ion-card-title>
+      <ion-card-subtitle>{{ nombre }}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      My username: {{ usuario }} <br> Dont forget call me: {{ telefono }}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
